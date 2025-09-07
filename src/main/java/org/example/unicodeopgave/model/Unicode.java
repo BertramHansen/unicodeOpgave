@@ -1,17 +1,15 @@
 package org.example.unicodeopgave.model;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class Unicode {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int unicode;
     private char bogstav;
     private String description;
+
 
     public String getDescription() {
         return description;
